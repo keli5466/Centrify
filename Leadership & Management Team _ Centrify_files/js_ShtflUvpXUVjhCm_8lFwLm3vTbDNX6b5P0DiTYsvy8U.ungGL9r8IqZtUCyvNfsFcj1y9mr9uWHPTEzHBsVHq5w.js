@@ -1,0 +1,4 @@
+/* Source and licensing information for the line(s) below can be found at https://www.centrify.com/themes/custom/centrify/js/text-accordion.js. */
+'use strict';(function(t,e){e.behaviors.centrifyTextAccordion={attach:function(e,a){t('.text-accordion',e).once('text-accordion').each(function(){var e=this;t('.text-accordion-item-title-button',e).on('click',function(){var e=t(this),a=e.parent(),n=t('#'+e.attr('aria-controls'));if(e.attr('aria-expanded')=='true'){e.attr('aria-expanded',!1);a.removeClass('open');n.attr('hidden',!0)}
+else{e.attr('aria-expanded',!0);a.addClass('open');n.attr('hidden',!1)}});t(e).on('keydown',function(e){var a=t('dt>button',this),n=t(e.target),i=n.index(a),r=e.keyCode||e.which})})}}})(jQuery,Drupal);
+/* Source and licensing information for the above line(s) can be found at https://www.centrify.com/themes/custom/centrify/js/text-accordion.js. */

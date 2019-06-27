@@ -1,0 +1,3 @@
+/* Source and licensing information for the line(s) below can be found at https://www.centrify.com/modules/contrib/material_admin_support/js/modal-size-fix.js. */
+(function(i,t,e){'use strict';t.behaviors.materialAdminSupportModalSizeFix={attach:function(){i(document).ready(function(){i(e).once('materialAdminSupportModalSizeFix').on('dialog:aftercreate',function(){i(e).trigger('resize')})})}}})(jQuery,Drupal,window);
+/* Source and licensing information for the above line(s) can be found at https://www.centrify.com/modules/contrib/material_admin_support/js/modal-size-fix.js. */

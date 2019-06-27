@@ -1,0 +1,11 @@
+/* Source and licensing information for the line(s) below can be found at https://www.centrify.com/themes/custom/centrify/js/js.cookie.js. */
+/*!
+ * JavaScript Cookie v2.2.0
+ * https://github.com/js-cookie/js-cookie
+ *
+ * Copyright 2006, 2015 Klaus Hartl & Fagner Brack
+ * Released under the MIT license
+ */
+;(function(e){var n=!1;if(typeof define==='function'&&define.amd){define(e);n=!0};if(typeof exports==='object'){module.exports=e();n=!0};if(!n){var o=window.Cookies,t=window.Cookies=e();t.noConflict=function(){window.Cookies=o;return t}}}(function(){function e(){var e=0,o={};for(;e<arguments.length;e++){var t=arguments[e];for(var n in t){o[n]=t[n]}};return o};function n(o){function t(n,c,i){var f;if(typeof document==='undefined'){return};if(arguments.length>1){i=e({path:'/'},t.defaults,i);if(typeof i.expires==='number'){var d=new Date();d.setMilliseconds(d.getMilliseconds()+i.expires*864e+5);i.expires=d};i.expires=i.expires?i.expires.toUTCString():'';try{f=JSON.stringify(c);if(/^[\{\[]/.test(f)){c=f}}catch(C){};if(!o.write){c=encodeURIComponent(String(c)).replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g,decodeURIComponent)}
+else{c=o.write(c,n)};n=encodeURIComponent(String(n));n=n.replace(/%(23|24|26|2B|5E|60|7C)/g,decodeURIComponent);n=n.replace(/[\(\)]/g,escape);var p='';for(var a in i){if(!i[a]){continue};p+='; '+a;if(i[a]===!0){continue};p+='='+i[a]};return(document.cookie=n+'='+c+p)};if(!n){f={}};var m=document.cookie?document.cookie.split('; '):[],g=/(%[0-9A-Z]{2})+/g,u=0;for(;u<m.length;u++){var l=m[u].split('='),r=l.slice(1).join('=');if(!this.json&&r.charAt(0)==='"'){r=r.slice(1,-1)};try{var s=l[0].replace(g,decodeURIComponent);r=o.read?o.read(r,s):o(r,s)||r.replace(g,decodeURIComponent);if(this.json){try{r=JSON.parse(r)}catch(C){}};if(n===s){f=r;break};if(!n){f[s]=r}}catch(C){}};return f};t.set=t;t.get=function(e){return t.call(t,e)};t.getJSON=function(){return t.apply({json:!0},[].slice.call(arguments))};t.defaults={};t.remove=function(n,o){t(n,'',e(o,{expires:-1}))};t.withConverter=n;return t};return n(function(){})}));
+/* Source and licensing information for the above line(s) can be found at https://www.centrify.com/themes/custom/centrify/js/js.cookie.js. */

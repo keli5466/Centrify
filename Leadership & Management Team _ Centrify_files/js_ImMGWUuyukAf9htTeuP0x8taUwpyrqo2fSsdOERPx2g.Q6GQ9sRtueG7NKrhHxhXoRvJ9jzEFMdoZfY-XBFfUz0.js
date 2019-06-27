@@ -1,0 +1,3 @@
+/* Source and licensing information for the line(s) below can be found at https://www.centrify.com/themes/custom/centrify/js/carousel-mobile-only.js. */
+'use strict';(function(o,a){a.behaviors.centrifyCarouselMobileOnly={attach:function(i,a){var t=o(window).width();if(t<768){o('.carousel-mobile-only').each(function(){o(this).addClass('owl-carousel');var a=o(this).data('carousel-options');o(this).owlCarousel(a)})}}}})(jQuery,Drupal);
+/* Source and licensing information for the above line(s) can be found at https://www.centrify.com/themes/custom/centrify/js/carousel-mobile-only.js. */

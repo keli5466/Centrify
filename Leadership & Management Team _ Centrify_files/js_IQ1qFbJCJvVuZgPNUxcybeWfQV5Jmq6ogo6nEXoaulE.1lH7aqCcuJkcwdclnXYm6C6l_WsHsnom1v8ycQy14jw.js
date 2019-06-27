@@ -1,0 +1,3 @@
+/* Source and licensing information for the line(s) below can be found at https://www.centrify.com/themes/custom/centrify/js/full-width-tabs.js. */
+'use strict';(function(t,a){a.behaviors.centrifyPrimaryMenu={attach:function(a,n){t('.fullwidth-tabs',a).once('fullwidth-tabs').each(function(){var a=this;t('.side-nav-tab-expand',a).on('click',function(){t('.side-nav-tab-expand',a).each(function(){var a='#'+t(this).attr('aria-controls');t(a).attr('hidden',!0);t(this).parent().removeClass('open')});t(this).parent().addClass('open');var n='#'+t(this).attr('aria-controls');t(n).attr('hidden',!1)})})}}})(jQuery,Drupal);
+/* Source and licensing information for the above line(s) can be found at https://www.centrify.com/themes/custom/centrify/js/full-width-tabs.js. */
